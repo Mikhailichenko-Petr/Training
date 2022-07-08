@@ -29,7 +29,17 @@ function myFunc(arg){
     c.newValue = 'New Value'
     c.grade.arg1 = null
     c.grade.arg2 = null
-    return console.log(c)
+    // return console.log(c)
 }
 myFunc(obj)
-console.log(obj);
+// console.log(obj);
+
+let arg={}
+// console.log(!!arg);
+
+const func=(arg1,arg2=2)=>{
+    // arg2 является по умолчанию 2
+    console.log(arg1*arg2)
+}
+func(5)
+func(10,3)
