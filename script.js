@@ -127,7 +127,58 @@ switch(namePerson.name){
 
 ///// тернарный оператор 
 
-const a=20
+const a=19
 const b='10'
     typeof a==='number'?console.log(a+10):console.log('false')
     typeof b==='number'?console.log(a+10):console.log('false')
+console.log(a<=20?a+5:null);
+const ternar=typeof a!='number'?'a не = number':'а = number'
+console.log(ternar);
+
+////  For
+
+const ar=['one','two','three']
+for(i=0;i<ar.length;i++){
+    console.log(ar[i]);
+}
+ar.forEach((el,ind)=>{
+    console.log(el,ind);
+})
+//// while 
+let whiles=1
+while(whiles<5){
+    whiles++
+    console.log(whiles,'while')
+}
+//// do While
+let doWhile=0
+do{
+    doWhile++
+    console.log(doWhile,'doWhile');
+}while(doWhile<5){
+    console.log(`doWhile=${doWhile}`);
+}
+//// For in
+for(key in ar){
+    console.log(ar[key],'ForIn array');
+}
+for(key in obj){
+    console.log(obj[key],'ForIn object');
+}
+/// For of 
+for(const sumbol of people.name){
+    console.log(sumbol,'==>forOf');
+}
+
+//////////////////
+
+function symbol(s){
+    const array=[...s]
+    const array2=[]
+    for(i=0;i<array.length;i++){
+        console.log(array[i],array);
+        
+    }
+    console.log(array);
+  }
+  symbol("ZpglnRxqenU")
