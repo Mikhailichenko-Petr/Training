@@ -172,13 +172,26 @@ for(const sumbol of people.name){
 
 //////////////////
 
-function symbol(s){
-    const array=[...s]
-    const array2=[]
-    for(i=0;i<array.length;i++){
-        console.log(array[i],array);
-        
-    }
-    console.log(array);
+function dontGiveMeFive(start, end){
+  for (let i = start; i <= end; i++) {
+    console.log(i);
+
   }
-  symbol("ZpglnRxqenU")
+}
+dontGiveMeFive(1,9)
+
+//////
+
+class Car{
+    constructor(color,price,name){
+        this.color=color,
+        this.price=price,
+        this.name=name,
+        this.like=0
+    }
+    Qrt(){
+        this.like +=1
+    }
+}
+const newCar=new Car('red','2.300.00','bmw')
+console.log(newCar);
